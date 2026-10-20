@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#113139">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Fünf kurze Unterrichtsanimationen zum Anschauen und Entdecken. KI für uns, Seminar am 22. Oktober 2026.">
+  <title>Unterrichtsanimationen · KI für uns</title>
+  <link rel="apple-touch-icon" href="./assets/icon-192.png">
+  <link rel="icon" href="./assets/icon-192.png">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./videos.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#player">Zum Video</a>
+  <div class="page">
+    <header class="masthead">
+      <div class="wordmark"><span class="mark" aria-hidden="true">▶</span> KI für uns</div>
+      <p>Seminar · 22. Oktober 2026</p>
+    </header>
+    <main>
+      <div class="intro">
+        <p class="eyebrow">Ideen für den Unterricht</p>
+        <h1>Unterrichtsanimationen</h1>
+        <p>Wähle ein Video und entdecke, was sich mit KI und Manim sichtbar machen lässt.</p>
+      </div>
+      <div class="gallery">
+        <section class="watch" aria-labelledby="video-title">
+          <div class="video-wrap">
+            <video id="player" controls playsinline preload="metadata" poster="./assets/ueberblick.jpg" aria-label="Überblick: vier Fächer">
+              <source src="./media/ueberblick.mp4" type="video/mp4">
+              Dein Browser kann dieses Video nicht abspielen.
+            </video>
+          </div>
+          <p id="playback-status" class="playback-status" role="status" hidden></p>
+          <div class="caption">
+            <div><p id="video-position" class="eyebrow">Video 1 von 5 · 1:11 min</p><h2 id="video-title">Überblick: vier Fächer</h2></div>
+            <span class="silent">Ohne Ton</span>
+          </div>
+          <p id="video-description" class="description">Integralrechnung, Pendelenergie, Zinseszins und Diffusion in einem kurzen Rundgang.</p>
+          <div class="player-actions">
+            <button id="previous" class="plain-button" type="button" disabled>← Vorheriges</button>
+            <a id="download" href="./media/ueberblick.mp4" download="Manim_Ueberblick.mp4">Video herunterladen ↓</a>
+            <button id="next" class="plain-button" type="button">Nächstes →</button>
+          </div>
+        </section>
+        <nav class="selection" aria-label="Videoauswahl"><h2>Was interessiert dich?</h2><div id="video-list" class="video-list"></div></nav>
+      </div>
+      <section class="takeaway" aria-labelledby="takeaway-title">
+        <div><h2 id="takeaway-title">Ansehen und weitergeben</h2><p>Öffne die Galerie auf dem iPad oder deinem Smartphone und wähle ein Video. Über „Video herunterladen“ kannst du das ausgewählte Video auch für später speichern.</p></div>
+      </section>
+    </main>
+    <footer><p>Yanick Rau <span aria-hidden="true">/</span> TOP „KI für uns“</p><p>Fünf Demonstrationen mit Manim</p></footer>
+  </div>
+  <noscript><p>Für die Videoauswahl bitte JavaScript aktivieren. <a href="./media/ueberblick.mp4">Überblicksvideo direkt öffnen</a>.</p></noscript>
+</body>
+</html>
